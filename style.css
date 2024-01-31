@@ -94,10 +94,12 @@
         position: relative;
         height: 100vh;
         background: url('Assets/main.png') center top /cover no-repeat fixed; 
-        display: block;
         color: #fff;
         text-align: center;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between ;
 }
 
     .hero-section a {
@@ -114,15 +116,15 @@
         font-style: normal;
         font-weight: 600;
         letter-spacing: -0.1rem;
-        padding-top: 4.5em;    
+        padding-top: 5em;    
     }
 
     .hero-section i {
-        margin-top: 8.8em;
         border: solid 1px;
         border-radius: 2em;
         padding: 0.5em;
         font-size: 22px;
+        margin-bottom: 3em;
     }
 
     .hero-section i:hover {
@@ -188,7 +190,7 @@
         font-weight: 400;
         line-height: 1.4em; 
         padding: 1em 1em 1.6em 1.6em;
-        width: 28em;
+        width: 95%;
     }
 
     .holding {
@@ -212,7 +214,7 @@
     }
 
     .holding .fers-group {
-        width: 41%;
+        width: 50%;
     }
 
     .holding .fers-group h2 {
@@ -234,6 +236,11 @@
         line-height: 1.6em;
         letter-spacing: -0.04313rem;
         margin-top: 1rem;
+    }
+
+    .holding .img-holding img {
+        padding-left: 3em;
+        width:100%;
     }
 
     .unid {
@@ -313,21 +320,16 @@
         }
     }
 
-    .contacto-form {
-        padding-left: 11%;
-        padding-right: 11%;
-    }
-
     .contacto-form .cont-form {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: baseline;
         padding-top: 10em;
         padding-bottom: 7em;
     }
 
     .contacto-form .cont-form .text-contct {
-        width: 45%;
+        width: 60%;
     }
 
     .contacto-form .cont-form .text-contct p {
@@ -360,7 +362,6 @@
         flex: 1 0 0;
         align-self: stretch;
         padding-right: 2%;
-
     }
 
     #form-contacto ::placeholder {
@@ -424,8 +425,8 @@
     }
 
     .img-footer {
-        background: url(Assets/foot-img.png) center / auto no-repeat fixed;
-        height: 25rem;
+        background: url(Assets/foot-img.png)  center top /cover no-repeat fixed;
+        height: 18rem;
     }
     
     .img-footer h2 {
@@ -1061,6 +1062,8 @@
         justify-content: center;
         list-style: none;
         gap: 1.2em;
+        padding-left: 18%;
+        padding-right: 18%;
     }
 
     #Ganaderia .list-gan li {
@@ -1072,7 +1075,7 @@
         align-items: center;
         color: #144264;
         font-family: Inter;
-        font-size: 1.1em;
+        font-size: 1em;
         font-style: normal;
         font-weight: 700;
         margin-top: 2em;
@@ -1091,18 +1094,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         gap: 2em;
-        padding-left: 17%;
-        padding-right: 17%;
+        padding-left: 18%;
+        padding-right: 18%;
+        margin-top: 1em;
     }
 
     #Ganaderia .punteo-unid li {
         color: #144264;
         font-family: Inter;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 3.36363rem; /* 236.888% */
         list-style: none;
         display: flex;
         align-items: center;
@@ -1599,19 +1603,19 @@
     }
 
     .contacto-form {
-        padding-left: 18%;
-        padding-right: 18%;    
+        padding-left: 12%;
+        padding-right: 12%;    
     }
 
     .contacto-form .cont-form {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 2.5em;
+        gap: 3em;
     }
 
     .contacto-form .cont-form .text-contact {
-        width: 40%;
+        width: 50%;
         font-size: 1.2em;
         line-height: 2rem; /* 182.609% */
     }
@@ -2889,7 +2893,7 @@ ul.buttons-unidades li.active {
     padding-bottom: 2.5em;
     color: rgba(101, 101, 101, 0.50);
     font-family: Inter;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 1.61181rem */
