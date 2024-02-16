@@ -707,6 +707,7 @@
         gap: 0.2em;
         margin-top: 5em;
         padding-bottom: 5em;
+        overflow: hidden;
     }
 
     .botones-ant-sig button {
@@ -724,7 +725,8 @@
 
     .botones-ant-sig button a i {
         padding-left: 0.4em;
-        padding-right: 0.2em
+        padding-right: 0.2em;
+        overflow: hidden;
     }
 
     .botones-ant-sig .sig a {
@@ -743,6 +745,7 @@
         text-align: center;
         display: flex;
         align-items: center;
+        overflow: hidden;
     }
 
     .botones-ant-sig .ant .inactive {
@@ -759,12 +762,14 @@
         background: rgba(0, 0, 0, 0.05);
         padding: 1.1em 1.1em;
         margin-right: 1em;
+        overflow: hidden;
     }
 
     .botones-ant-sig .ant i {
         color: #000000;
         opacity: 100%;
         text-align: center;
+        overflow: hidden;
     }
 
     .botones-ant-sig .inactive {
@@ -2386,6 +2391,7 @@
         gap: 0.2em;
         margin-top: 5em;
         padding-bottom: 5em;
+        overflow: hidden;
     }
 
     .botones-ant-sig button {
@@ -2406,6 +2412,7 @@
 
     .botones-ant-sig .sig a {
         width: max-content;
+        overflow: hidden;
     }
 
     .botones-ant-sig button a {
@@ -2419,10 +2426,12 @@
         text-align: center;
         display: flex;
         align-items: center;
+        overflow: hidden;
     }
 
     .botones-ant-sig button a i {
         width: 2em;
+        overflow: hidden;
     }
 
     .botones-ant-sig .ant .inactive {
@@ -2439,12 +2448,14 @@
         background: rgba(0, 0, 0, 0.05);
         padding: 1.1em 1.1em;
         margin-right: 1em;
+        overflow: hidden;
     }
 
     .botones-ant-sig .ant i {
         color: #000000;
         opacity: 100%;
         text-align: center;
+        overflow: hidden;
     }
 
     .botones-ant-sig .inactive {
