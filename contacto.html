@@ -69,7 +69,7 @@
                 </p>    
             </div>
             
-            <form id="form-contacto">
+            <form id="form-contacto" method="POST" action="enviar_formulario.php">
                 <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
             
                 <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono">
@@ -91,9 +91,11 @@
         <div class="foot-links">
             <div class="link-nosotros">
                 <h4><a href="nosotros.html">Nosotros</a></h4>
-                <li><a href="nosotros.html">Fersam Group Europe</a></li>
-                <li><a href="nosotros.html">Argentina</a></li>
-                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="nosotros.html">Fersam Group</a></li>
+                <li><a href="nosotros.html">Fersam agroindustrial</a></li>
+                <li><a href="nosotros.html">Estancia Las Cabezas</a></li>
+                <li><a href="nosotros.html">Visión</a></li>
+                <li><a href="nosotros.html">Comité Ejecutivo</a></li>
             </div>
             <div class="unidades-footer">
                 <h4><a href="unidades de negocio.html">Unidades de negocios</a></h4>
@@ -116,12 +118,26 @@
         <div class="foot-inf">
             <p>+ 50 años de experiencia global</p>
             <div class="redes-log">
-                <a href=""><img src="Assets/Facebook.svg" alt=""></a>
-                <a href=""><img src="Assets/Youtube.svg" alt=""></a>
+                <a href="https://www.linkedin.com/company/fersam-agroindustrial/about/"><img src="Assets/linkdin.svg" alt="" width="28em"></a>
                 <a href="https://www.instagram.com/fersam_holding/?hl=es-la"><img src="Assets/Instagram.svg" alt=""></a>
             </div>
         </div>
     </footer>
+
+    <script>
+        function procesarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var telefono = document.getElementById("telefono").value;
+            var email = document.getElementById("email").value;
+            var mensaje = document.getElementById("mensaje").value;
+                
+// Limpiar los campos
+            document.getElementById("nombre").value = "";
+            document.getElementById("telefono").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("mensaje").value = "";
+        }
+        </script>
 
 </body>
 </html>

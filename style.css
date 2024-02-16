@@ -6,8 +6,8 @@
     margin: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
     }
+
 
 /* DESKTOP */
 @media (min-width: 992px) {
@@ -630,6 +630,7 @@
 /**Fersam group**/
     #Fersam-Group {
         position: relative;
+        overflow: hidden;
     }
 
     #Fersam-Group .img-group {
@@ -672,7 +673,7 @@
     }
 
     .galeria-nosotros {
-        overflow: hidden; 
+        overflow: none; 
         position: relative;
         width: 150%;
         padding-top: 6em;
@@ -693,8 +694,9 @@
     
     .galeria-lista li img {
         width: 100%;
-        height: auto;
+        height: 12em;
         object-fit: cover;
+        border-radius: 0.6em;
     }
         
     
@@ -773,6 +775,7 @@
 
     #Fersam-agroindustrial {
         position: relative;
+        overflow: hidden;
     }
 
     #Fersam-agroindustrial p {
@@ -813,6 +816,7 @@
 
     #Estancia-Las-Cabezas {
         position: relative;
+        overflow: hidden;
     }
 
     #Estancia-Las-Cabezas .img-lascabezas {
@@ -824,6 +828,7 @@
 /**Visión**/
     #Vision {
         position: relative;
+        overflow: hidden;
     }
 
     #Vision p {
@@ -909,6 +914,7 @@
 /**Comité ejecutivo**/
     #Comite-Ejecutivo {
         position: relative;
+        overflow: hidden;
     }
 
     #Comite-Ejecutivo .comite-ejecutivo {
@@ -937,6 +943,7 @@
         line-height: 1.5em; /* 201.337% */
         letter-spacing: -0.02963rem;
         text-transform: uppercase;
+        overflow: hidden;
     }
 
     #Comite-Ejecutivo .comite-ejecutivo .text-eq span {
@@ -949,10 +956,13 @@
         line-height: 2em; /* 165.822% */
         letter-spacing: -0.04em;
         text-transform: uppercase;
+        overflow: hidden;
     }
 
-    #Comite-Ejecutivo .comite-ejecutivo .text-eq i {
+    #Comite-Ejecutivo .comite-ejecutivo .text-eq a i {
         font-size: 1.3em;
+        overflow: hidden;
+        color: black;
     }
 
     .contenido {
@@ -1633,16 +1643,19 @@
         font-size: 1.1em;
         font-weight: 600;
         letter-spacing: -0.03em;
+        overflow: hidden;
     }
 
     .contacto-form .cont-form .button-form-contact i {
         padding-left: 0.3em;
         width: 2em;
+        overflow: hidden;
     }
 
 
     .contacto-form .cont-form .button-form-contact:hover {
         background: #0c283d;
+        overflow: hidden;
     }
 
     .contacto-form #form-contacto ::placeholder {
@@ -1686,6 +1699,7 @@
 
     .menu-mobile .header-mobile nav ul{
         display: none;
+        
     }
     
     .menu-mobile .header-mobile nav input:checked  ~ ul{
@@ -1725,15 +1739,22 @@
         text-align: center;
     }
 
+    .desplegable {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 90%;
+    }
     
     .menu-mobile .header-mobile nav ul li {
         display: block;
-        width: 90%;
+        width: 100%;
         list-style: none;
-        border-top: solid 0.8px white;
         font-size: 1em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+        border-top: solid 1px white;
     }
 
     .menu-mobile .header-mobile nav li a {
@@ -1741,10 +1762,10 @@
         color: white;
         text-align: center;
         font-family: Inter;
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: 400;
         display: block;
-        padding: 1em 0;
+        padding: 2em 0;
     }
     
     /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -1882,6 +1903,10 @@
         letter-spacing: -0.04313rem;
         margin-top: 1rem;
         margin-bottom: 1em;
+    }
+
+    .img-holding img {
+        width: 100% !important;
     }
 
     .unid {
@@ -2057,10 +2082,12 @@
 
     #form-contacto .button-form i {
         padding-right: 0.2em;
+        overflow: hidden;
     }
 
     #form-contacto .button-form:hover {
         background-color: #412d5e;
+        overflow: hidden;
     }
 
     .img-footer {
@@ -2613,11 +2640,14 @@
     line-height: 1.5em; /* 165.822% */
     letter-spacing: -0.04em;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
-#Comite-Ejecutivo .comite-ejecutivo .text-eq i {
+#Comite-Ejecutivo .comite-ejecutivo .text-eq a i {
     font-size: 2em;
     padding-top: 0.5em;
+    overflow: hidden;
+    color: black;
 }
 
 #Comite-Ejecutivo .comite-ejecutivo .com-ej img {
@@ -3315,15 +3345,19 @@ ul.buttons-unidades li.active {
     margin: auto;
     margin-bottom: 2em;
     width: 95%;
+    overflow: hidden;
 }
 
 .contacto-form .cont-form .button-form-contact:hover {
     background: #0c283d;
+    overflow: hidden;
 }
 
 .contacto-form .cont-form .button-form-contact i {
     width: 1em;
+    overflow: hidden;
     padding-right: 0.2em;
+    padding-top: 0.2em;
 }
 
 
