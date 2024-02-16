@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 
 // Dirección de correo electrónico donde se enviará el formulario
-$destinatario = 'curbettimf@gmail.com';
+$destinatario = 'ecastellucci@entreriossa.com';
 
 // Asunto del correo electrónico
 $asunto = 'Nuevo mensaje desde el formulario de contacto';
